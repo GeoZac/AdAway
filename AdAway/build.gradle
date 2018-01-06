@@ -23,12 +23,12 @@ android {
         }
     }
 
-    compileSdkVersion 25
+    compileSdkVersion 27
     buildToolsVersion '27.0.2'
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 23
+        targetSdkVersion 27
 
     }
 
@@ -62,6 +62,7 @@ android {
 
     // Do not abort build if lint finds errors
     lintOptions {
+        disable 'MissingTranslation'
         abortOnError false
     }
 
